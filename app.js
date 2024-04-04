@@ -4,8 +4,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 // Import Router
-const authRouter = require('./app/auth/router');
-const categoriesRouter = require('./app/categories/router');
+const authRouter = require('./app/api/auth/router');
+const categoriesRouter = require('./app/api/categories/router');
 
 const URL = "/api/v1"
 
