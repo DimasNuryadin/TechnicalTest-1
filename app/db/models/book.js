@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     category: DataTypes.INTEGER,
     author: DataTypes.STRING,
     image: DataTypes.TEXT,
-    publish: DataTypes.DATE,
+    published: DataTypes.DATE,
     price: DataTypes.INTEGER,
     stock: DataTypes.INTEGER
   }, {

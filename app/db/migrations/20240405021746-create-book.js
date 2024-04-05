@@ -24,7 +24,7 @@ module.exports = {
       image: {
         type: Sequelize.TEXT
       },
-      publish: {
+      published: {
         type: Sequelize.DATE
       },
       price: {
