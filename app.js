@@ -7,7 +7,7 @@ const logger = require('morgan');
 const authRouter = require('./app/api/auth/router');
 const categoriesRouter = require('./app/api/categories/router');
 
-const URL = "/api/v1"
+const URL = "/api/v1";
 
 const app = express();
 
@@ -17,12 +17,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(`${URL}`, authRouter);
+app.use(`${URL}`, categoriesRouter);
+
 app.use('/', (req, res) => {
   res.json({
     message: 'Welcome to API toko buku pak erwin'
   })
 });
-app.use(`${URL}`, authRouter);
-app.use(`${URL}`, categoriesRouter);
+
 
 module.exports = app;
