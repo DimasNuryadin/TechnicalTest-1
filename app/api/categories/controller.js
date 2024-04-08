@@ -17,9 +17,31 @@ module.exports = {
       const { name } = req.body;
 
       const categories = await Category.create({ name: name, user: req.user.id });
-      res.status(201).json({ message: 'Success message categories', data: categories })
+      res.status(201).json({ message: 'Success create categories', data: categories })
     } catch (err) {
       next(err);
+    }
+  },
+  updateCategories: async (req, res, next) => {
+    try {
+      const { id } = req.params;
+      const { name } = req.body;
+      const checkCategory = await Category.findOne({
+        where: {
+          id,
+          user: req.user.id,
+        }
+      });
+
+      const categories = await checkCategory.update({ name }, {
+        where: {
+          id,
+          user: req.user.id,
+        }
+      });
+      res.status(201).json({ message: 'Success update categories', data: categories })
+    } catch (err) {
+      next(err)
     }
   }
 }
