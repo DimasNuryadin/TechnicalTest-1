@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const { isLogin } = require('../../middleware/auth');
+const { getAllCategories, createCategories } = require('./controller');
 
-router.get('/categories', isLogin, function (req, res) {
-  res.status(200).json({ message: "Router auth" })
-});
+router.get('/categories', isLogin, getAllCategories);
+router.post('/categories', isLogin, createCategories);
 
 module.exports = router;
