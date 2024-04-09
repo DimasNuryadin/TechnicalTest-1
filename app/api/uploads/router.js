@@ -4,6 +4,6 @@ const { isLogin } = require('../../middleware/auth');
 const { uploadImage } = require('./controller');
 const upload = require('../../middleware/multer');
 
-router.get('/uploads', isLogin, upload.single('image'), uploadImage);
+router.post('/uploads', isLogin, upload.single('image'), uploadImage);
 
 module.exports = router;
