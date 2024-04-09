@@ -43,5 +43,18 @@ module.exports = {
     } catch (err) {
       next(err)
     }
+  },
+  deleteCategories: (req, res, next) => {
+    Category.findOne({
+      where: {
+        id: req.params.id,
+        user: req.user.id,
+      }
+    }).then((categories) => {
+      if (categories) {
+        categories.destroy();
+        res.status(200).json({ message: 'Success delete categories', data: categories })
+      }
+    }).catch((err) => next(err));
   }
 }
