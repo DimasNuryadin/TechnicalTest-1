@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       transaction: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       user: {
         type: Sequelize.INTEGER
