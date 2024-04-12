@@ -1,5 +1,4 @@
 const { Transaction, DetailTransaction, Book } = require("../../db/models");
-const { Op } = require('sequelize');
 const { sequelize } = require('../../db/models');
 
 module.exports = {
@@ -59,9 +58,6 @@ module.exports = {
           message: `No book with id : ${errorBookIdNotFound.join(', ')} and user : ${user} `
         })
       }
-
-      console.log("update stock : ", updateStock)
-      console.log("payload : ", payload)
 
       // Jika success
       await Book.bulkCreate(updateStock, {
