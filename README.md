@@ -4,9 +4,11 @@
 
 Task 1: Manajemen kategori(Wajib)
   - Manajemen kategori harus dapat CRUD create, read, update dan delete
+
 Task 2: Manajemen buku(Wajib)
   - Manajemen buku harus dapat CRUD create, read, update dan delete
   - Wajib dapat mencari buku berdasarkan judul
+
 Task 3: Checkout (Wajib)
   - Menampilkan data buku dan dapat mencari berdasarkan buku dan kategori
   - Setiap pembelian buku harus mengecek stok buku
