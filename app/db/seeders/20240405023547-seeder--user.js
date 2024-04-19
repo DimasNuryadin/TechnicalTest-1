@@ -12,6 +12,7 @@ module.exports = {
           id: 1,
           name: 'John Doe',
           email: 'admin@gmail.com',
+          role: 'admin',
           password: password,
           createdAt: new Date(),
           updatedAt: new Date()
@@ -20,6 +21,7 @@ module.exports = {
           id: 2,
           name: 'Dimas',
           email: 'dimas@gmail.com',
+          role: "admin",
           password: password,
           createdAt: new Date(),
           updatedAt: new Date()

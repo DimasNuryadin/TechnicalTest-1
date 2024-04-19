@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "bwa_db_toko_buku",
-    "host": "127.0.0.1",
+    "username": "siappest_dimas",
+    "password": "c%%Q0J72v@&7",
+    "database": "siappest_bwa_db_toko_buku",
+    "host": "173.212.195.173",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "siappest_dimas",
+    "password": "c%%Q0J72v@&7",
+    "database": "siappest_bwa_db_toko_buku",
+    "host": "173.212.195.173",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "siappest_dimas",
+    "password": "c%%Q0J72v@&7",
+    "database": "siappest_bwa_db_toko_buku",
+    "host": "173.212.195.173",
     "dialect": "mysql"
   }
 }
